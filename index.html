@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ruzshell Pearl — Basic Skin Care</title>
+  <style>
+    :root{
+      --pink-baby: #ffdcee; /* soft baby pink */
+      --magenta: #d6007a;  /* tombol */
+      --text:#333;
+      --muted:#666;
+      --card-bg: #fff;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background: linear-gradient(180deg,var(--pink-baby) 0%, #fff 60%);color:var(--text);}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+
+    /* Header / Hero */
+    .topbar{display:flex;align-items:center;gap:16px;padding:8px 0}
+    .logo{width:72px;height:72px;border-radius:12px;overflow:hidden;flex:0 0 72px;background:#fff;display:flex;align-items:center;justify-content:center}
+    .logo img{width:100%;height:100%;object-fit:cover}
+    .brand{display:flex;flex-direction:column}
+    .brand h1{margin:0;font-size:20px;color:var(--magenta)}
+    .tag{font-size:13px;color:var(--muted)}
+
+    .hero{margin-top:12px;border-radius:16px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,0.08)}
+    .hero .banner{width:100%;height:320px;object-fit:cover;display:block}
+    .hero .hero-content{padding:18px;background:rgba(255,255,255,0.9);display:flex;align-items:center;justify-content:space-between}
+    .hero h2{margin:0;font-size:20px;color:var(--magenta)}
+    .hero p{margin:6px 0 0;color:var(--muted)}
+
+    /* Product short description */
+    .intro{margin:18px 0;padding:16px;background:rgba(255,255,255,0.85);border-radius:12px}
+
+    /* Products row - must be single row */
+    .products-row{display:flex;gap:18px;flex-wrap:nowrap;overflow-x:auto;padding-bottom:8px}
+    .product{background:var(--card-bg);min-width:220px;flex:0 0 24%;border-radius:12px;padding:12px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+    .product img{width:100%;height:190px;object-fit:contain;border-radius:8px;background:#fcf2f6}
+    .product h3{font-size:16px;margin:10px 0 6px}
+    .meta{font-size:13px;color:var(--muted);min-height:70px}
+    .price{font-weight:700;margin-top:8px}
+    .btns{display:flex;gap:8px;margin-top:10px}
+    .btn{flex:1;padding:10px 12px;border-radius:10px;text-align:center;text-decoration:none;color:#fff;font-weight:600}
+    .btn.shopee{background:var(--magenta)}
+    .btn.tiktok{background:#333}
+
+    /* product knowledge sections */
+    .knowledge{margin-top:28px;display:flex;flex-direction:column;gap:18px}
+    .knowledge-item{display:flex;gap:16px;background:#fff;padding:14px;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.04)}
+    .knowledge-item img{width:160px;height:120px;object-fit:cover;border-radius:8px;flex:0 0 160px}
+    .knowledge-item .ktext{font-size:14px;color:var(--text)}
+    .ktitle{font-weight:700;margin-bottom:8px;color:var(--magenta)}
+    em.scientific{font-style:italic;color:var(--text)}
+
+    /* footer */
+    footer{margin-top:28px;padding:18px;text-align:center;font-size:14px;color:var(--muted)}
+    footer a{color:var(--magenta);text-decoration:none;font-weight:600}
+
+    /* responsive tweaks */
+    @media (max-width:900px){
+      .product{min-width:260px;flex:0 0 auto}
+      .hero .hero-content{flex-direction:column;align-items:flex-start}
+      .hero .banner{height:240px}
+      .knowledge-item{flex-direction:column;align-items:center}
+      .knowledge-item img{width:100%;height:200px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="topbar">
+      <div class="logo"><img src="logoruz.jpg" alt="Logo Ruzshell"></div>
+      <div class="brand">
+        <h1>Ruzshell Pearl</h1>
+        <div class="tag">Basic Skin Care untuk Kulit Sehat, Cantik dan Glowing</div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <img class="banner" src="basic.jpg" alt="Ruzshell Pearl — Hero Product">
+      <div class="hero-content">
+        <div>
+          <h2>Ruzshell Pearl — Basic Skin Care</h2>
+          <p>Rangkaian perawatan dasar yang dirancang untuk kulit sensitif, kering, kusam, serta membantu memperbaiki tekstur dan kecerahan kulit.
+          </p>
+        </div>
+        <div>
+          <a class="btn shopee" href="https://id.shp.ee/UQxMFSB" style="display:inline-block">Beli Sekarang (Shopee)</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="intro">
+      <strong>Deskripsi singkat:</strong>
+      <p>Ruzshell Pearl menawarkan rangkaian basic skin care berbasis bahan aktif terpilih — Niacinamide, Houttuynia cordata, 8x Hyaluronic Acid, 8x Ceramide, Allantoin, AHA/BHA/PHA — yang diracik ringan, aman untuk pemakaian harian dan untuk ibu hamil/menyusui. Tekstur lembut, aroma calming, dan fokus pada kulit yang lembap, tenang, dan glowing natural.</p>
+    </div>
+
+    <!-- Products Row: forced single row -->
+    <section>
+      <div style="display:flex;align-items:center;justify-content:space-between;margin:8px 0">
+        <h2 style="margin:0">Produk Ruzshell Pearl</h2>
+        <div style="font-size:13px;color:var(--muted)">Geser jika layar sempit — 4 produk sejajar</div>
+      </div>
+
+      <div class="products-row">
+        <!-- Product 1 -->
+        <article class="product">
+          <img src="exfoliating.jpg" alt="Ruzshell Pearl Exfoliating Gel">
+          <h3>Ruzshell Pearl Exfoliating Gel</h3>
+          <div class="meta">Gel eksfoliasi dengan Niacinamide, AHA/BHA/PHA, Vitamin E. Mengangkat sel kulit mati, komedo dan kotoran. Meredakan jerawat, membersihkan & mencerahkan. Gunakan 2–3x/minggu. BPOM: NA. 18250109252</div>
+          <div class="price">Rp. 65.000,-</div>
+          <div class="btns">
+            <a class="btn shopee" href="https://id.shp.ee/UQxMFSB">Shopee</a>
+            <a class="btn tiktok" href="https://vt.tokopedia.com/t/ZSH7obEV1CYhg-sucnL/">TiktokShop</a>
+          </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="product">
+          <img src="serum.jpg" alt="Ruzshell Pearl Soothing Radiance Serum">
+          <h3>Soothing Radiance Serum</h3>
+          <div class="meta">Serum dengan Niacinamide 4%, <em class="scientific">Houttuynia cordata</em>, dan 8x HA. Mencerahkan, anti-inflamasi, meredakan jerawat & menghidrasi. Cocok untuk kulit sensitif. BPOM: NA. 18250107888</div>
+          <div class="price">Rp. 85.000,-</div>
+          <div class="btns">
+            <a class="btn shopee" href="https://id.shp.ee/4hiXvCJ">Shopee</a>
+            <a class="btn tiktok" href="https://vt.tokopedia.com/t/ZSH7obEV1CYhg-sucnL/">TiktokShop</a>
+          </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product">
+          <img src="moisturizer.jpg" alt="Ruzshell Pearl 8x Ceramide Soothing Moisturizer">
+          <h3>8x Ceramide Soothing Moisturizer</h3>
+          <div class="meta">Pelembab dengan 8x Ceramide, <em class="scientific">Houttuynia cordata</em>, <em class="scientific">Aloevera barbadensis</em>. Menjaga skin barrier, mencegah kemerahan, melembabkan. BPOM: NA. 18250112813</div>
+          <div class="price">Rp. 95.000,-</div>
+          <div class="btns">
+            <a class="btn shopee" href="https://id.shp.ee/FnX8FTS">Shopee</a>
+            <a class="btn tiktok" href="https://vt.tokopedia.com/t/ZSH7ogPKcRLuc-drc48/">TiktokShop</a>
+          </div>
+        </article>
+
+        <!-- Product 4 -->
+        <article class="product">
+          <img src="fw.jpg" alt="Ruzshell Pearl Gentle Clarifying Facial Wash">
+          <h3>Gentle Clarifying Facial Wash</h3>
+          <div class="meta">Sabun wajah dengan <em class="scientific">Houttuynia cordata</em> dan Allantoin. Membersihkan tanpa membuat kulit kering ketarik; lembut, halus, dan calming. Cocok semua tipe kulit. BPOM: NA. 18251205367</div>
+          <div class="price">Rp. 65.000,-</div>
+          <div class="btns">
+            <a class="btn shopee" href="https://id.shp.ee/TnTCHhY">Shopee</a>
+            <a class="btn tiktok" href="https://vt.tokopedia.com/t/ZSH7ogthneV4w-nxRMB/">TiktokShop</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Product knowledge blocks (200 kata masing-masing) -->
+    <section class="knowledge">
+
+      <div class="knowledge-item">
+        <img src="niacinamide.jpg" alt="Niacinamide">
+        <div class="ktext">
+          <div class="ktitle">Niacinamide — Manfaat & Efektivitas (4%)</div>
+          <p>Niacinamide adalah bentuk aktif vitamin B3 yang sering digunakan pada konsentrasi 2–5% pada produk topikal untuk mencapai manfaat kosmetik yang jelas. Pada konsentrasi 4%, Niacinamide bekerja efektif untuk mencerahkan hiperpigmentasi ringan, mengurangi produksi sebum, memperkuat lipid barrier kulit, dan menurunkan tanda-tanda inflamasi. Mekanisme utamanya melibatkan penghambatan transfer melanosom dari melanosit ke keratinosit sehingga memudarkan bintik-bintik gelap dan meningkatkan tampilan warna kulit secara merata. Selain itu, Niacinamide merangsang sintesis ceramide dan lipid esensial di lapisan stratum corneum, sehingga meningkatkan fungsi penghalang kulit dan mengurangi kehilangan air trans-epidermal. Di kulit berjerawat, Niacinamide membantu menenangkan peradangan dan menurunkan kemerahan sambil mengontrol kilap berlebih tanpa menyebabkan iritasi tinggi. Kombinasi Niacinamide 4% dengan bahan penghidrasi seperti Hyaluronic Acid dan ceramide memberikan efek sinergis: kulit menjadi lebih halus, lebih tahan terhadap stres lingkungan, dan tampak lebih bercahaya secara alami. Untuk penggunaan: oleskan setelah pembersihan dan sebelum moisturizer, pagi dan malam, serta gunakan sunscreen di pagi hari untuk proteksi optimal.</p>
+        </div>
+      </div>
+
+      <div class="knowledge-item">
+        <img src="houttuynia.jpg" alt="Houttuynia cordata">
+        <div class="ktext">
+          <div class="ktitle"><em class="scientific">Houttuynia cordata</em> — Manfaat & Efektivitas</div>
+          <p><em class="scientific">Houttuynia cordata</em> adalah tanaman herbal yang secara tradisional digunakan karena efek anti-inflamasi dan antioksidannya. Dalam kosmetika, ekstrak <em class="scientific">Houttuynia cordata</em> dipilih untuk kemampuannya meredakan kemerahan, mengurangi iritasi, serta memberikan sensasi menenangkan pada kulit sensitif. Komponen fitokimia utamanya termasuk flavonoid dan fenolik yang berperan sebagai antioksidan, membantu melawan radikal bebas yang dapat merusak struktur kulit. Efektivitasnya terlihat pada pengurangan tanda-tanda inflamasi ringan dan perbaikan kondisi kulit yang rawan kemerahan. Ketika dipadukan dengan bahan penghidrasi dan barrier-repair (mis. ceramide, hyaluronic acid), ekstrak ini membantu menstabilkan mikro-lingkungan kulit sehingga proses pemulihan lebih cepat. Formulasi konsentrasi pada produk topikal biasanya disesuaikan agar tetap lembut dan tidak menimbulkan sensitasi, sehingga cocok untuk penggunaan pada kulit yang rentan terhadap iritasi. Produk Ruzshell menggabungkan ekstrak ini untuk memberikan efek calming dan perlindungan oksidatif ringan, terutama bermanfaat pada kulit yang mengalami inflamasi akibat jerawat atau paparan lingkungan.</p>
+        </div>
+      </div>
+
+      <div class="knowledge-item">
+        <img src="aloe.jpg" alt="Aloevera barbadensis">
+        <div class="ktext">
+          <div class="ktitle"><em class="scientific">Aloevera barbadensis</em> — Manfaat & Efektivitas</div>
+          <p><em class="scientific">Aloevera barbadensis</em> (sering disebut aloe vera) adalah ekstrak tanaman yang kaya akan polisakarida, vitamin, mineral, dan asam amino. Pada kulit, aloe vera berfungsi sebagai agen hidrasi dan menenangkan: polisakarida membentuk lapisan film ringan yang membantu mempertahankan kelembaban permukaan kulit, sementara komponen lainnya mendukung proses healing jaringan. Aloe vera diketahui efektif untuk mengurangi sensasi terbakar atau iritasi ringan, mempercepat regenerasi epitel, dan memberikan rasa sejuk ketika diaplikasikan pada kulit. Dalam produk pelembab, kandungan aloe vera memperkuat rasa lembut dan kalem terutama pada kulit sensitif atau setelah penggunaan bahan aktif yang lebih kuat. Karena sifat humektan dan film-forming ringan, aloe vera juga membantu kelembaban bertahan lebih lama saat dikombinasikan dengan humektan lain seperti Hyaluronic Acid. Formulasi yang baik memastikan ekstrak aloe tetap stabil dan tidak menyebabkan reaksi alergi; oleh karena itu Ruzshell menggunakan ekstrak terstandarisasi untuk memberi efek menenangkan dan tekstur lembut pada kulit.</p>
+        </div>
+      </div>
+
+      <div class="knowledge-item">
+        <img src="ha.jpg" alt="8x Hyaluronic Acid">
+        <div class="ktext">
+          <div class="ktitle">8x Hyaluronic Acid — Manfaat & Efektivitas</div>
+          <p>Frasa "8x Hyaluronic Acid" biasanya merujuk pada kombinasi beberapa bentuk Hyaluronic Acid (HA) dengan berat molekul berbeda sehingga memberikan hidrasi multi-level: molekul besar bekerja pada permukaan kulit untuk membentuk lapisan pelindung yang mencegah kehilangan air, sedangkan molekul kecil serta oligo-HA dapat menembus lebih dalam untuk menghidrasi lapisan epidermis yang lebih dalam. Pendekatan multi-fraksional seperti ini meningkatkan kemampuan produk untuk menahan kelembaban lebih lama dan memberikan efek plumping (mengisi garis halus) yang terlihat. Efektivitas HA bergantung pada formulasi: konsentrasi, kombinasi berat molekul, dan stabilitas. Kombinasi 8x HA yang tepat membantu kulit tampak lebih kenyal, halus, dan terhidrasi. Saat dipakai bersama bahan barrier-repair seperti ceramide atau humektan lain, HA mendukung proses perbaikan fungsi penghalang dan mencegah TEWL (trans-epidermal water loss). Pada serum Ruzshell, 8x HA ditujukan untuk menghidrasi dalam dan membuat tampilan kulit lebih bercahaya serta terasa lebih lembut setelah pemakaian rutin.
+          </p>
+        </div>
+      </div>
+
+      <div class="knowledge-item">
+        <img src="ceramide.jpg" alt="8x Ceramide">
+        <div class="ktext">
+          <div class="ktitle">8x Ceramide — Manfaat & Hubungan dengan 8x HA</div>
+          <p>Ceramide adalah lipid struktural utama dalam lapisan stratum corneum yang berperan penting menjaga integritas barrier kulit. Istilah "8x Ceramide" biasanya menunjukkan kombinasi berbagai jenis ceramide (mis. ceramide NP, AP, EOS, dll.) untuk meniru komposisi lipid alami kulit sehingga memperbaiki dan memperkuat barrier lebih efektif dibanding satu jenis ceramide saja. Fungsi utamanya adalah mengisi celah lipid pada lapisan pelepas air sehingga mengurangi kehilangan air trans-epidermal, mengurangi sensasi kering, dan menurunkan risiko iritasi. Hubungan antara ceramide dan Hyaluronic Acid adalah sinergis: sementara HA menarik dan menahan air di dalam kulit (hidrasi), ceramide memastikan air tersebut tidak mudah hilang dengan memperbaiki struktur lipid. Kombinasi 8x Ceramide + 8x HA akan memberikan hidrasi yang tahan lama (HA) sekaligus pemulihan barrier (ceramide) sehingga kulit menjadi lembap, lebih kuat terhadap stres lingkungan, dan lebih sedikit mengalami kemerahan atau iritasi. Pada moisturizer, kombinasi ini ideal untuk kulit sensitif, kering, dan rentan kemerahan.
+          </p>
+        </div>
+      </div>
+
+      <div class="knowledge-item">
+        <img src="aha.jpg" alt="AHA BHA">
+        <div class="ktext">
+          <div class="ktitle">AHA / BHA pada Exfoliating Gel — Manfaat & Efektivitas</div>
+          <p>AHA (Alpha Hydroxy Acid) dan BHA (Beta Hydroxy Acid) adalah eksfolian kimia populer. AHA seperti glycolic atau lactic acid larut dalam air dan efektif pada permukaan kulit untuk mengangkat sel kulit mati, memperbaiki tekstur, dan meningkatkan kecerahan. BHA (biasanya salicylic acid) bersifat lipofilik sehingga mampu menembus pori yang berminyak untuk membersihkan komedo dan mengurangi peradangan pada jerawat. Kombinasi AHA + BHA pada gel eksfoliasi memberikan aksi ganda: AHA mencerahkan dan menghaluskan permukaan kulit, sementara BHA membersihkan pori-pori dan mengurangi komedo. Efektivitas tergantung pada pH formulasi dan konsentrasi; formulasi yang tepat akan memberikan eksfoliasi efektif tanpa menyebabkan iritasi berlebih. Disarankan menggunakan 2–3x/minggu, dan selalu mengaplikasikan sunscreen pada pagi hari karena AHA/BHA meningkatkan sensitivitas kulit terhadap sinar UV. Kombinasi ini juga sering dipadukan dengan PHA untuk menambah efek lembut bagi kulit sensitif.
+          </p>
+        </div>
+      </div>
+
+      <div class="knowledge-item">
+        <img src="pha.jpg" alt="PHA">
+        <div class="ktext">
+          <div class="ktitle">PHA pada Exfoliating Gel — Manfaat & Efektivitas</div>
+          <p>PHA (Polyhydroxy Acid) adalah kelompok asam hidroksi yang mirip dengan AHA namun memiliki molekul yang lebih besar sehingga penetrasinya lebih lambat dan umumnya lebih lembut pada kulit. PHA menawarkan eksfoliasi permukaan yang efektif sambil mempertahankan kelembaban karena sifatnya humektan. Karena bersifat lebih mild, PHA cocok untuk kulit sensitif yang tidak toleran terhadap AHA/BHA konvensional. Selain mengangkat sel kulit mati, PHA juga memiliki sifat antioksidan dan dapat membantu memperbaiki tekstur kulit tanpa menimbulkan iritasi berlebihan. Dalam formulasi exfoliating gel, menambahkan PHA memberikan lapisan perlindungan lembut sehingga pengguna yang sensitif masih dapat menikmati manfaat eksfoliasi dengan risiko iritasi lebih rendah. Penggunaan PHA bersama AHA/BHA dapat menyeimbangkan aksi eksfoliasi: tetap efektif namun lebih ramah untuk kulit sensitif.
+          </p>
+        </div>
+      </div>
+
+      <div class="knowledge-item">
+        <img src="allantoin.jpg" alt="Allantoin">
+        <div class="ktext">
+          <div class="ktitle">Allantoin pada Facial Wash — Manfaat & Efektivitas</div>
+          <p>Allantoin adalah bahan yang sering dipakai dalam produk perawatan kulit karena sifatnya yang menenangkan dan mempercepat proses pemulihan kulit. Ia membantu melunakkan sel kulit mati, mempercepat regenerasi epitel, dan mengurangi rasa tidak nyaman seperti ketarik atau kering setelah pembersihan. Pada facial wash, Allantoin berfungsi untuk menjaga kelembaban dan memberi sensasi lembut sehingga wajah terasa bersih namun tidak kering ketarik. Ketika digabungkan dengan surfaktan yang lembut dan ekstrak menenangkan seperti <em class="scientific">Houttuynia cordata</em>, formulasi dapat membersihkan efektif sambil mempertahankan lipid permukaan dan kelembutan kulit. Allantoin umumnya memiliki profil iritasi rendah, sehingga aman untuk berbagai jenis kulit, termasuk yang sensitif, bila diformulasikan dalam konsentrasi kosmetik standar.
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+    <footer>
+      <div>Temukan kami di: <a href="http://shopee.co.id/ruzshellpearl" target="_blank">Shopee</a> • <a href="http://tiktok.com/@ruzshellpearl" target="_blank">TikTok</a> • <a href="http://wa.me/628558330030" target="_blank">WhatsApp</a> • <a href="https://instagram.com/ruzshellpearl.official" target="_blank">Instagram</a></div>
+      <div style="margin-top:8px;color:var(--muted)">© Ruzshell Pearl — All rights reserved</div>
+    </footer>
+
+  </div>
+</body>
+</html>
